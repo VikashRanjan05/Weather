@@ -7,9 +7,9 @@ export default function App() {
   const api_key1 = '02ff1af40501eaef4791534f45ecc281'; // Weather stack api key
   // const api_key = 'bccfca751a7a5188daaf0e80ee03c12a'; // openweather api key
   
-  // axios.get(`http://api.weatherstack.com/current?access_key=${api_key1}&query=muzaffarpur&unit=standard`)
-  // .then(res=>console.log("ok",res.data))
-  // .catch(err=>console.log("error", err))
+  axios.get(`http://api.weatherstack.com/current?access_key=${api_key1}&query=muzaffarpur&unit=standard`)
+  .then(res=>console.log("ok",res.data))
+  .catch(err=>console.log("error", err))
   // axios.get(`http://api.openweathermap.org/data/2.5/weather?q=muzaffarpur&appid=${api_key}`)
   // .then(res=>console.log("okk",res.data))
   // .then(err=>console.log("error",err))
@@ -33,7 +33,7 @@ export default function App() {
         </Header>
         <Content>
           <Text>
-            
+            Search Your location weather
           </Text>
         </Content>
         <Footer>
